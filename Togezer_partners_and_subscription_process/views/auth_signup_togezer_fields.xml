@@ -2,19 +2,52 @@
 <odoo>
         <template id="auth_signup_togezer_fields" inherit_id="auth_signup.fields" name="Add Togezer custom fields to Auth SignUp">
             <xpath expr="//div[hasclass('form-group','field-name')]" position="after">
-            <!--               
-                <div class="form-group field-lcc">
-                    <label for="name">Your Local Currency</label>                               
-                    <select class="form-control" name="lcc" t-att-value="lcc" id="lcc">
-                        <option value="">Local Currency...</option>
-                        <t t-foreach="request.env['lcc_for_partners.lcc'].search([])" t-as="lcc">
-                            <option t-attf-value="#{lcc.id}">
-                                <t t-esc="lcc.name"/>
-                            </option>
-                        </t>
-                    </select>
-                </div> 
-            -->
+                <div class="form-group field-phone">
+                    <label for="login">Your Phone</label>
+                    <input type="tel" name="phone" t-att-value="phone" id="phone" class="form-control form-control-sm" autofocus="autofocus"
+                        autocapitalize="off" required="required" t-att-readonly="'readonly' if only_passwords else None"/>
+                </div>
+                <div class="form-group field-whatsapp">
+                    <label for="login">Your Whatsapp</label>
+                    <input type="tel" name="whatsapp" t-att-value="whatsapp" id="whatsapp" class="form-control form-control-sm" autofocus="autofocus"
+                        autocapitalize="off" t-att-readonly="'readonly' if only_passwords else None"/>
+                </div>
+                <div class="form-group field-skype">
+                    <label for="login">Your Skype</label>
+                    <input type="text" name="skype" t-att-value="skype" id="skype" class="form-control form-control-sm" autofocus="autofocus"
+                        autocapitalize="off" t-att-readonly="'readonly' if only_passwords else None"/>
+                </div>
+                <div class="form-group field-company">
+                    <label for="login">Your Company</label>
+                    <input type="text" name="my_company" t-att-value="my_company" id="my_company" class="form-control form-control-sm" autofocus="autofocus"
+                        autocapitalize="off" required="required" t-att-readonly="'readonly' if only_passwords else None"/>
+                </div>
+                <div class="form-group field-website">
+                    <label for="login">Your company website</label>
+                    <input type="url" name="website" t-att-value="website" id="website" class="form-control form-control-sm" autofocus="autofocus"
+                        autocapitalize="off" required="required" t-att-readonly="'readonly' if only_passwords else None"/>
+                </div>
+                <div class="form-group field-biography">
+                    <label for="login">Your Biography</label>
+                    <input type="text" name="biography" t-att-value="biography" id="biography" class="form-control form-control-sm" autofocus="autofocus"
+                        autocapitalize="off" required="required" t-att-readonly="'readonly' if only_passwords else None"/>
+                </div>
+                <!-- TO BE ADDED LATER
+                    <div class="form-group field-spoken_languages">
+                    <label for="login">Your spoken languages</label>
+                    <input type="Many2many" name="spoken_languages" t-att-value="spoken_languages" id="spoken_languages" class="form-control form-control-sm" autofocus="autofocus"
+                        autocapitalize="off" required="required" t-att-readonly="'readonly' if only_passwords else None"/>
+                </div> -->
+                
+            </xpath>
+            <xpath expr="//div[hasclass('form-group','field-confirm_password')]" position="after">
+                <div class="form-group field-terms_of_use">
+                    <p>
+                        <input type="checkbox" name="terms_of_use_agreed" t-att-value="terms_of_use_agreed" id="terms_of_use_agreed" autofocus="autofocus"
+                            required="required" t-att-readonly="'readonly' if only_passwords else None"/>
+                        You accept and agree to comply with the following Terms of Use: <a href='https://www.togezer.travel/condition-generale-d-utilisation'>https://www.togezer.travel/condition-generale-d-utilisation</a>
+                    </p>
+                </div>
             </xpath>
         </template>
 </odoo>

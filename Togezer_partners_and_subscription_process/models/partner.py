@@ -73,4 +73,10 @@ class Partner(models.Model):
         readonly=False
     )
 
+    terms_of_use_agreed = fields.Boolean(
+        string="Terms of use agreed",
+        required=True,
+        readonly=True
+    )
+
     
