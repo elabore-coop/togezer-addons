@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record model="ir.ui.view" id="partner_togezer_form_view">
+      <field name="name">partner.togezer.form</field>
+      <field name="model">res.partner</field>
+      <field name="inherit_id" ref="base.view_partner_form"/>
+      <field name='priority'>300</field>
+      <field name="arch" type="xml">
+        <xpath expr="//field[@name='function']" position="before">
+          <field attrs="{'invisible': [('is_company', '=', True)]}" name="my_company"/>
+        </xpath>
+        <xpath expr="//field[@name='website']" position="after">
+          <field name="skype"/>
+          <field name="whatsapp"/>
+        </xpath>
+        <!-- Replace vat field and add some fields-->
+        <xpath expr="//field[@name='vat']" position="replace"> 
+          <!-- <field attrs="{'invisible': [('is_company', '=', False)]}" name="vat"/> -->
+          <field attrs="{'invisible': [('is_company', '=', True)]}" name="biography"/>
+          <field attrs="{'invisible': [('is_company', '=', True)]}" name="spoken_languages" optional="hide" widget="many2many_tags"/>
+          <field attrs="{'invisible': [('is_company', '=', False)]}" name="tourism_licence"/>          
+          <field attrs="{'invisible': [('is_company', '=', False)]}" name="company_category" optional="hide" widget="many2many_tags"/>
+          <field attrs="{'invisible': [('is_company', '=', False)]}" name="company_speciality" optional="hide" widget="many2many_tags"/>
+          <field attrs="{'invisible': [('is_company', '=', False)]}" name="historic"/>
+          <field attrs="{'invisible': [('is_company', '=', False)]}" name="opening_hours"/>
+        </xpath>
+      </field>
+    </record>
+</odoo>

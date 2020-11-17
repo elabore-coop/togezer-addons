@@ -1,0 +1,131 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* lcc_for_partners
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 12.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-07-16 13:41+0000\n"
+"PO-Revision-Date: 2020-07-16 13:41+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: lcc_for_partners
+#: model:ir.model,name:lcc_for_partners.model_res_partner
+msgid "Contact"
+msgstr ""
+
+#. module: lcc_for_partners
+#: code:addons/lcc_for_partners/models/lcc.py:21
+#: model:ir.model.fields,field_description:lcc_for_partners.field_lcc_for_partners_lcc__create_uid
+#, python-format
+msgid "Created by"
+msgstr "Créé par"
+
+#. module: lcc_for_partners
+#: code:addons/lcc_for_partners/models/lcc.py:15
+#: model:ir.model.fields,field_description:lcc_for_partners.field_lcc_for_partners_lcc__create_date
+#, python-format
+msgid "Created on"
+msgstr "Créé le"
+
+#. module: lcc_for_partners
+#: code:addons/lcc_for_partners/models/lcc.py:54
+#: model:ir.model.fields,field_description:lcc_for_partners.field_lcc_for_partners_lcc__department
+#, python-format
+msgid "Department"
+msgstr "Département"
+
+#. module: lcc_for_partners
+#: model:ir.model.fields,field_description:lcc_for_partners.field_lcc_for_partners_lcc__display_name
+msgid "Display Name"
+msgstr "Nom affiché"
+
+#. module: lcc_for_partners
+#: code:addons/lcc_for_partners/models/lcc.py:9
+#: model:ir.model.fields,field_description:lcc_for_partners.field_lcc_for_partners_lcc__id
+#, python-format
+msgid "ID"
+msgstr ""
+
+#. module: lcc_for_partners
+#: model:ir.actions.act_window,name:lcc_for_partners.action_lcc_list_view
+#: model:ir.ui.menu,name:lcc_for_partners.lcc_list_menu
+msgid "LCC"
+msgstr "MLC"
+
+#. module: lcc_for_partners
+#: model_terms:ir.ui.view,arch_db:lcc_for_partners.lcc_tree_view
+msgid "LCC Tree"
+msgstr "Liste des MLCC"
+
+#. module: lcc_for_partners
+#: code:addons/lcc_for_partners/models/lcc.py:39
+#: model:ir.model.fields,field_description:lcc_for_partners.field_lcc_for_partners_lcc____last_update
+#: model:ir.model.fields,field_description:lcc_for_partners.field_lcc_for_partners_lcc___lcc__last_update
+#, python-format
+msgid "Last Modified on"
+msgstr "Dernière modification le"
+
+#. module: lcc_for_partners
+#: code:addons/lcc_for_partners/models/lcc.py:33
+#: model:ir.model.fields,field_description:lcc_for_partners.field_lcc_for_partners_lcc__write_uid
+#, python-format
+msgid "Last Updated by"
+msgstr "Dernière mise à jour par"
+
+#. module: lcc_for_partners
+#: code:addons/lcc_for_partners/models/lcc.py:27
+#: model:ir.model.fields,field_description:lcc_for_partners.field_lcc_for_partners_lcc__write_date
+#, python-format
+msgid "Last Updated on"
+msgstr "Dernière mise à jour le"
+
+#. module: lcc_for_partners
+#: model:ir.model,name:lcc_for_partners.model_lcc_for_partners_lcc
+msgid "Local Complementary Currency"
+msgstr "Monnaie Locale Complémentaire"
+
+#. module: lcc_for_partners
+#: model:ir.model.fields,field_description:lcc_for_partners.field_res_partner__lcc
+#: model:ir.model.fields,field_description:lcc_for_partners.field_res_users__lcc
+msgid "Local currency"
+msgstr "Monnaie locale"
+
+#. module: lcc_for_partners
+#: model:res.groups,name:lcc_for_partners.group_lcc_for_partners_manager
+msgid "Local currency manager"
+msgstr "Administrateir Monnaie Locale"
+
+#. module: lcc_for_partners
+#: model:ir.module.category,description:lcc_for_partners.module_lcc_for_partners_category
+#: model:ir.module.category,name:lcc_for_partners.module_lcc_for_partners_category
+msgid "MLCC"
+msgstr "MLCC"
+
+#. module: lcc_for_partners
+#: code:addons/lcc_for_partners/models/lcc.py:48
+#: model:ir.model.fields,field_description:lcc_for_partners.field_lcc_for_partners_lcc__name
+#, python-format
+msgid "Name"
+msgstr "Nom"
+
+#. module: lcc_for_partners
+#: code:addons/lcc_for_partners/models/lcc.py:66
+#: model:ir.model.fields,field_description:lcc_for_partners.field_lcc_for_partners_lcc__in_sol_movement
+#, python-format
+msgid "SOL Movement"
+msgstr "Mouvement SOL"
+
+#. module: lcc_for_partners
+#: code:addons/lcc_for_partners/models/lcc.py:60
+#: model:ir.model.fields,field_description:lcc_for_partners.field_lcc_for_partners_lcc__creation_year
+#, python-format
+msgid "Year of creation"
+msgstr "Année de création"
+

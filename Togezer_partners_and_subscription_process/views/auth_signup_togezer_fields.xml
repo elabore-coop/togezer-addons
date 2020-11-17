@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+        <template id="auth_signup_togezer_fields" inherit_id="auth_signup.fields" name="Add Togezer custom fields to Auth SignUp">
+            <xpath expr="//div[hasclass('form-group','field-name')]" position="after">
+            <!--               
+                <div class="form-group field-lcc">
+                    <label for="name">Your Local Currency</label>                               
+                    <select class="form-control" name="lcc" t-att-value="lcc" id="lcc">
+                        <option value="">Local Currency...</option>
+                        <t t-foreach="request.env['lcc_for_partners.lcc'].search([])" t-as="lcc">
+                            <option t-attf-value="#{lcc.id}">
+                                <t t-esc="lcc.name"/>
+                            </option>
+                        </t>
+                    </select>
+                </div> 
+            -->
+            </xpath>
+        </template>
+</odoo>
