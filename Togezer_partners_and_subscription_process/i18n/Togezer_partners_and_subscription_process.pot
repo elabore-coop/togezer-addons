@@ -1,0 +1,229 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* Togezer_partners_and_subscription_process
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 13.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-11-17 17:32+0000\n"
+"PO-Revision-Date: 2020-11-17 17:32+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: Togezer_partners_and_subscription_process
+#: model:ir.model.fields,field_description:Togezer_partners_and_subscription_process.field_res_partner__historic
+#: model:ir.model.fields,field_description:Togezer_partners_and_subscription_process.field_res_users__historic
+msgid "Compagny historic"
+msgstr ""
+
+#. module: Togezer_partners_and_subscription_process
+#: model:ir.actions.act_window,name:Togezer_partners_and_subscription_process.action_company_categories_list_view
+#: model:ir.model.fields,field_description:Togezer_partners_and_subscription_process.field_res_partner__company_category
+#: model:ir.model.fields,field_description:Togezer_partners_and_subscription_process.field_res_users__company_category
+#: model:ir.ui.menu,name:Togezer_partners_and_subscription_process.company_categories_list_menu
+msgid "Company categories"
+msgstr ""
+
+#. module: Togezer_partners_and_subscription_process
+#: model:ir.model,name:Togezer_partners_and_subscription_process.model_togezer_company_category
+msgid "Company category"
+msgstr ""
+
+#. module: Togezer_partners_and_subscription_process
+#: model_terms:ir.ui.view,arch_db:Togezer_partners_and_subscription_process.company_category_tree_view
+msgid "Company category Tree"
+msgstr ""
+
+#. module: Togezer_partners_and_subscription_process
+#: model:ir.actions.act_window,name:Togezer_partners_and_subscription_process.action_company_specialities_list_view
+#: model:ir.model.fields,field_description:Togezer_partners_and_subscription_process.field_res_partner__company_speciality
+#: model:ir.model.fields,field_description:Togezer_partners_and_subscription_process.field_res_users__company_speciality
+#: model:ir.ui.menu,name:Togezer_partners_and_subscription_process.company_specialities_list_menu
+msgid "Company specialities"
+msgstr ""
+
+#. module: Togezer_partners_and_subscription_process
+#: model:ir.model,name:Togezer_partners_and_subscription_process.model_togezer_company_speciality
+msgid "Company speciality"
+msgstr ""
+
+#. module: Togezer_partners_and_subscription_process
+#: model_terms:ir.ui.view,arch_db:Togezer_partners_and_subscription_process.company_speciality_tree_view
+msgid "Company speciality Tree"
+msgstr ""
+
+#. module: Togezer_partners_and_subscription_process
+#: model:ir.model,name:Togezer_partners_and_subscription_process.model_res_partner
+msgid "Contact"
+msgstr ""
+
+#. module: Togezer_partners_and_subscription_process
+#: code:addons/Togezer_partners_and_subscription_process/models/company_category.py:0
+#: code:addons/Togezer_partners_and_subscription_process/models/company_speciality.py:0
+#: model:ir.model.fields,field_description:Togezer_partners_and_subscription_process.field_togezer_company_category__create_uid
+#: model:ir.model.fields,field_description:Togezer_partners_and_subscription_process.field_togezer_company_speciality__create_uid
+#, python-format
+msgid "Created by"
+msgstr ""
+
+#. module: Togezer_partners_and_subscription_process
+#: code:addons/Togezer_partners_and_subscription_process/models/company_category.py:0
+#: code:addons/Togezer_partners_and_subscription_process/models/company_speciality.py:0
+#: model:ir.model.fields,field_description:Togezer_partners_and_subscription_process.field_togezer_company_category__create_date
+#: model:ir.model.fields,field_description:Togezer_partners_and_subscription_process.field_togezer_company_speciality__create_date
+#, python-format
+msgid "Created on"
+msgstr ""
+
+#. module: Togezer_partners_and_subscription_process
+#: model:ir.model.fields,field_description:Togezer_partners_and_subscription_process.field_togezer_company_category__display_name
+#: model:ir.model.fields,field_description:Togezer_partners_and_subscription_process.field_togezer_company_speciality__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: Togezer_partners_and_subscription_process
+#: code:addons/Togezer_partners_and_subscription_process/models/company_category.py:0
+#: code:addons/Togezer_partners_and_subscription_process/models/company_speciality.py:0
+#: model:ir.model.fields,field_description:Togezer_partners_and_subscription_process.field_togezer_company_category__id
+#: model:ir.model.fields,field_description:Togezer_partners_and_subscription_process.field_togezer_company_speciality__id
+#, python-format
+msgid "ID"
+msgstr ""
+
+#. module: Togezer_partners_and_subscription_process
+#: model:ir.model.fields,field_description:Togezer_partners_and_subscription_process.field_togezer_company_category____last_update
+#: model:ir.model.fields,field_description:Togezer_partners_and_subscription_process.field_togezer_company_speciality____last_update
+msgid "Last Modified on"
+msgstr ""
+
+#. module: Togezer_partners_and_subscription_process
+#: code:addons/Togezer_partners_and_subscription_process/models/company_category.py:0
+#: code:addons/Togezer_partners_and_subscription_process/models/company_speciality.py:0
+#: model:ir.model.fields,field_description:Togezer_partners_and_subscription_process.field_togezer_company_category__write_uid
+#: model:ir.model.fields,field_description:Togezer_partners_and_subscription_process.field_togezer_company_speciality__write_uid
+#, python-format
+msgid "Last Updated by"
+msgstr ""
+
+#. module: Togezer_partners_and_subscription_process
+#: code:addons/Togezer_partners_and_subscription_process/models/company_category.py:0
+#: code:addons/Togezer_partners_and_subscription_process/models/company_speciality.py:0
+#: model:ir.model.fields,field_description:Togezer_partners_and_subscription_process.field_togezer_company_category__write_date
+#: model:ir.model.fields,field_description:Togezer_partners_and_subscription_process.field_togezer_company_speciality__write_date
+#, python-format
+msgid "Last Updated on"
+msgstr ""
+
+#. module: Togezer_partners_and_subscription_process
+#: model:ir.model.fields,field_description:Togezer_partners_and_subscription_process.field_res_partner__skype
+#: model:ir.model.fields,field_description:Togezer_partners_and_subscription_process.field_res_users__skype
+msgid "My Skype"
+msgstr ""
+
+#. module: Togezer_partners_and_subscription_process
+#: model:ir.model.fields,field_description:Togezer_partners_and_subscription_process.field_res_partner__whatsapp
+#: model:ir.model.fields,field_description:Togezer_partners_and_subscription_process.field_res_users__whatsapp
+msgid "My Whatsapp"
+msgstr ""
+
+#. module: Togezer_partners_and_subscription_process
+#: model:ir.model.fields,field_description:Togezer_partners_and_subscription_process.field_res_partner__biography
+#: model:ir.model.fields,field_description:Togezer_partners_and_subscription_process.field_res_users__biography
+msgid "My biography"
+msgstr ""
+
+#. module: Togezer_partners_and_subscription_process
+#: model:ir.model.fields,field_description:Togezer_partners_and_subscription_process.field_res_partner__my_company
+#: model:ir.model.fields,field_description:Togezer_partners_and_subscription_process.field_res_users__my_company
+msgid "My company"
+msgstr ""
+
+#. module: Togezer_partners_and_subscription_process
+#: code:addons/Togezer_partners_and_subscription_process/models/company_category.py:0
+#: code:addons/Togezer_partners_and_subscription_process/models/company_speciality.py:0
+#: model:ir.model.fields,field_description:Togezer_partners_and_subscription_process.field_togezer_company_category__name
+#: model:ir.model.fields,field_description:Togezer_partners_and_subscription_process.field_togezer_company_speciality__name
+#, python-format
+msgid "Name"
+msgstr ""
+
+#. module: Togezer_partners_and_subscription_process
+#: model:ir.model.fields,field_description:Togezer_partners_and_subscription_process.field_res_partner__opening_hours
+#: model:ir.model.fields,field_description:Togezer_partners_and_subscription_process.field_res_users__opening_hours
+msgid "Opening hours"
+msgstr ""
+
+#. module: Togezer_partners_and_subscription_process
+#: code:addons/Togezer_partners_and_subscription_process/controllers/main.py:0
+#, python-format
+msgid "Passwords do not match; please retype them."
+msgstr ""
+
+#. module: Togezer_partners_and_subscription_process
+#: model:ir.model.fields,field_description:Togezer_partners_and_subscription_process.field_res_partner__spoken_languages
+#: model:ir.model.fields,field_description:Togezer_partners_and_subscription_process.field_res_users__spoken_languages
+msgid "Spoken languages"
+msgstr ""
+
+#. module: Togezer_partners_and_subscription_process
+#: model:ir.model.fields,field_description:Togezer_partners_and_subscription_process.field_res_partner__terms_of_use_agreed
+#: model:ir.model.fields,field_description:Togezer_partners_and_subscription_process.field_res_users__terms_of_use_agreed
+msgid "Terms of use agreed"
+msgstr ""
+
+#. module: Togezer_partners_and_subscription_process
+#: code:addons/Togezer_partners_and_subscription_process/controllers/main.py:0
+#, python-format
+msgid "The form was not properly filled in."
+msgstr ""
+
+#. module: Togezer_partners_and_subscription_process
+#: model:ir.model.fields,field_description:Togezer_partners_and_subscription_process.field_res_partner__tourism_licence
+#: model:ir.model.fields,field_description:Togezer_partners_and_subscription_process.field_res_users__tourism_licence
+msgid "Tourism licence"
+msgstr ""
+
+#. module: Togezer_partners_and_subscription_process
+#: model_terms:ir.ui.view,arch_db:Togezer_partners_and_subscription_process.auth_signup_togezer_fields
+msgid "You accept and agree to comply with the following Terms of Use:"
+msgstr ""
+
+#. module: Togezer_partners_and_subscription_process
+#: model_terms:ir.ui.view,arch_db:Togezer_partners_and_subscription_process.auth_signup_togezer_fields
+msgid "Your Biography"
+msgstr ""
+
+#. module: Togezer_partners_and_subscription_process
+#: model_terms:ir.ui.view,arch_db:Togezer_partners_and_subscription_process.auth_signup_togezer_fields
+msgid "Your Company"
+msgstr ""
+
+#. module: Togezer_partners_and_subscription_process
+#: model_terms:ir.ui.view,arch_db:Togezer_partners_and_subscription_process.auth_signup_togezer_fields
+msgid "Your Phone"
+msgstr ""
+
+#. module: Togezer_partners_and_subscription_process
+#: model_terms:ir.ui.view,arch_db:Togezer_partners_and_subscription_process.auth_signup_togezer_fields
+msgid "Your Skype"
+msgstr ""
+
+#. module: Togezer_partners_and_subscription_process
+#: model_terms:ir.ui.view,arch_db:Togezer_partners_and_subscription_process.auth_signup_togezer_fields
+msgid "Your Whatsapp"
+msgstr ""
+
+#. module: Togezer_partners_and_subscription_process
+#: model_terms:ir.ui.view,arch_db:Togezer_partners_and_subscription_process.auth_signup_togezer_fields
+msgid "Your company website"
+msgstr ""
+
+#. module: Togezer_partners_and_subscription_process
+#: model_terms:ir.ui.view,arch_db:Togezer_partners_and_subscription_process.auth_signup_togezer_fields
+msgid "https://www.togezer.travel/condition-generale-d-utilisation"
+msgstr ""

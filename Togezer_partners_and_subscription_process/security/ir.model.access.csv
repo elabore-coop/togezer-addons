@@ -1,0 +1,3 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_company_category_manager,company_category_manager,Togezer_partners_and_subscription_process.model_togezer_company_category,base.group_system,1,1,1,1
+access_company_speciality_manager,company_speciality_manager,Togezer_partners_and_subscription_process.model_togezer_company_speciality,base.group_system,1,1,1,1

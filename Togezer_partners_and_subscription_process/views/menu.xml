@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<odoo>
+    <data>
+        <!-- ************************************************************************** -->
+        <!-- Actions                                                                    -->
+        <!-- ************************************************************************** -->
+        
+        <!-- Company Categories-->
+        <record id="action_company_categories_list_view" model="ir.actions.act_window">
+            <field name="name">Company categories</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">togezer.company_category</field>
+            <field name="view_mode">tree</field>
+            <field name="help" type="html"><p><br/></p></field>
+        </record>
+
+        <!-- Company Specialities-->
+        <record id="action_company_specialities_list_view" model="ir.actions.act_window">
+            <field name="name">Company specialities</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">togezer.company_speciality</field>
+            <field name="view_mode">tree</field>
+            <field name="help" type="html"><p><br/></p></field>
+        </record>
+
+
+
+        <!-- ************************************************************************** -->
+        <!-- Menu items                                                                 -->
+        <!-- ************************************************************************** -->
+
+        <!-- Company Categories-->
+        <menuitem id="company_categories_list_menu"
+            name="Company categories"
+            action="action_company_categories_list_view"
+            parent="contacts.res_partner_menu_config"/>
+
+        <!-- Company Specialities-->
+        <menuitem id="company_specialities_list_menu"
+            name="Company specialities"
+            action="action_company_specialities_list_view"
+            parent="contacts.res_partner_menu_config"/>
+    </data>
+</odoo>
