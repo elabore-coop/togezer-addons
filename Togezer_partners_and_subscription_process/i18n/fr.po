@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 13.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-11-17 17:32+0000\n"
-"PO-Revision-Date: 2020-11-17 17:32+0000\n"
+"POT-Creation-Date: 2020-11-18 17:54+0000\n"
+"PO-Revision-Date: 2020-11-18 17:54+0000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -60,7 +60,7 @@ msgstr "Liste des spécialité de l'entreprise"
 #. module: Togezer_partners_and_subscription_process
 #: model:ir.model,name:Togezer_partners_and_subscription_process.model_res_partner
 msgid "Contact"
-msgstr "Contact"
+msgstr ""
 
 #. module: Togezer_partners_and_subscription_process
 #: code:addons/Togezer_partners_and_subscription_process/models/company_category.py:0
@@ -93,7 +93,7 @@ msgstr "Nom affiché"
 #: model:ir.model.fields,field_description:Togezer_partners_and_subscription_process.field_togezer_company_speciality__id
 #, python-format
 msgid "ID"
-msgstr "ID"
+msgstr ""
 
 #. module: Togezer_partners_and_subscription_process
 #: model:ir.model.fields,field_description:Togezer_partners_and_subscription_process.field_togezer_company_category____last_update
@@ -118,18 +118,6 @@ msgstr "Dernière mise à jour par"
 #, python-format
 msgid "Last Updated on"
 msgstr "Dernière mise à jour le"
-
-#. module: Togezer_partners_and_subscription_process
-#: model:ir.model.fields,field_description:Togezer_partners_and_subscription_process.field_res_partner__skype
-#: model:ir.model.fields,field_description:Togezer_partners_and_subscription_process.field_res_users__skype
-msgid "My Skype"
-msgstr "Mon Skype"
-
-#. module: Togezer_partners_and_subscription_process
-#: model:ir.model.fields,field_description:Togezer_partners_and_subscription_process.field_res_partner__whatsapp
-#: model:ir.model.fields,field_description:Togezer_partners_and_subscription_process.field_res_users__whatsapp
-msgid "My Whatsapp"
-msgstr "Mon Whatsapp"
 
 #. module: Togezer_partners_and_subscription_process
 #: model:ir.model.fields,field_description:Togezer_partners_and_subscription_process.field_res_partner__biography
@@ -163,6 +151,13 @@ msgstr "Heures d'ouverture"
 #, python-format
 msgid "Passwords do not match; please retype them."
 msgstr ""
+"Les mots de passe ne correspondent pas, veuillez les saisir à nouveau."
+
+#. module: Togezer_partners_and_subscription_process
+#: model:ir.model.fields,field_description:Togezer_partners_and_subscription_process.field_res_partner__skype
+#: model:ir.model.fields,field_description:Togezer_partners_and_subscription_process.field_res_users__skype
+msgid "Skype"
+msgstr ""
 
 #. module: Togezer_partners_and_subscription_process
 #: model:ir.model.fields,field_description:Togezer_partners_and_subscription_process.field_res_partner__spoken_languages
@@ -180,13 +175,19 @@ msgstr "Conditions d'utilisation acceptées"
 #: code:addons/Togezer_partners_and_subscription_process/controllers/main.py:0
 #, python-format
 msgid "The form was not properly filled in."
-msgstr ""
+msgstr "Le formulaire n'est pas correctement rempli."
 
 #. module: Togezer_partners_and_subscription_process
 #: model:ir.model.fields,field_description:Togezer_partners_and_subscription_process.field_res_partner__tourism_licence
 #: model:ir.model.fields,field_description:Togezer_partners_and_subscription_process.field_res_users__tourism_licence
 msgid "Tourism licence"
 msgstr "Licence de tourisme"
+
+#. module: Togezer_partners_and_subscription_process
+#: model:ir.model.fields,field_description:Togezer_partners_and_subscription_process.field_res_partner__whatsapp
+#: model:ir.model.fields,field_description:Togezer_partners_and_subscription_process.field_res_users__whatsapp
+msgid "Whatsapp"
+msgstr ""
 
 #. module: Togezer_partners_and_subscription_process
 #: model_terms:ir.ui.view,arch_db:Togezer_partners_and_subscription_process.auth_signup_togezer_fields
@@ -205,6 +206,36 @@ msgstr "Votre entreprise"
 
 #. module: Togezer_partners_and_subscription_process
 #: model_terms:ir.ui.view,arch_db:Togezer_partners_and_subscription_process.auth_signup_togezer_fields
+msgid "Your Company Address"
+msgstr "Son adresse"
+
+#. module: Togezer_partners_and_subscription_process
+#: model_terms:ir.ui.view,arch_db:Togezer_partners_and_subscription_process.auth_signup_togezer_fields
+msgid "Your Company City"
+msgstr "Sa ville"
+
+#. module: Togezer_partners_and_subscription_process
+#: model_terms:ir.ui.view,arch_db:Togezer_partners_and_subscription_process.auth_signup_togezer_fields
+msgid "Your Company Website"
+msgstr "Le site Web de votre entreprise"
+
+#. module: Togezer_partners_and_subscription_process
+#: model_terms:ir.ui.view,arch_db:Togezer_partners_and_subscription_process.auth_signup_togezer_fields
+msgid "Your Company Zip"
+msgstr "Son code postal"
+
+#. module: Togezer_partners_and_subscription_process
+#: model_terms:ir.ui.view,arch_db:Togezer_partners_and_subscription_process.auth_signup_togezer_fields
+msgid "Your Firstname"
+msgstr "Votre prénom"
+
+#. module: Togezer_partners_and_subscription_process
+#: model_terms:ir.ui.view,arch_db:Togezer_partners_and_subscription_process.auth_signup_togezer_fields
+msgid "Your Function"
+msgstr "Poste occupé"
+
+#. module: Togezer_partners_and_subscription_process
+#: model_terms:ir.ui.view,arch_db:Togezer_partners_and_subscription_process.auth_signup_togezer_fields
 msgid "Your Phone"
 msgstr "Votre numéro de téléphone"
 
@@ -217,11 +248,6 @@ msgstr "Votre identifiant Skype"
 #: model_terms:ir.ui.view,arch_db:Togezer_partners_and_subscription_process.auth_signup_togezer_fields
 msgid "Your Whatsapp"
 msgstr "Votre numéro Whatsapp"
-
-#. module: Togezer_partners_and_subscription_process
-#: model_terms:ir.ui.view,arch_db:Togezer_partners_and_subscription_process.auth_signup_togezer_fields
-msgid "Your company website"
-msgstr "Le site Web de votre entreprise"
 
 #. module: Togezer_partners_and_subscription_process
 #: model_terms:ir.ui.view,arch_db:Togezer_partners_and_subscription_process.auth_signup_togezer_fields
