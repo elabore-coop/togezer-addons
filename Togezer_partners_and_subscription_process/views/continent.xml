@@ -1,0 +1,14 @@
+<odoo>
+  <data>
+    <!-- List view of a transaction -->
+    <record model="ir.ui.view" id="continent_tree_view">
+      <field name="name">continent.tree</field>
+      <field name="model">togezer.continent</field>
+      <field name="arch" type="xml">
+        <tree string="Company continents Tree" editable='top'>
+          <field name="name"/>
+        </tree>
+      </field>
+    </record>
+  </data>
+</odoo>

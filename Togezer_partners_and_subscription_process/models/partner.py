@@ -12,14 +12,14 @@ class Partner(models.Model):
     )
 
     whatsapp = fields.Char(
-        string="My Whatsapp",
+        string="Whatsapp",
         required=False,
         translate=False,
         readonly=False
     )
 
     skype = fields.Char(
-        string="My Skype",
+        string="Skype",
         required=False,
         translate=False,
         readonly=False
@@ -41,6 +41,13 @@ class Partner(models.Model):
     company_speciality = fields.Many2many(
         'togezer.company_speciality',
         string="Company specialities",
+        required=False,
+        readonly=False
+    )
+
+    continent = fields.Many2many(
+        'togezer.continent',
+        string="Continents",
         required=False,
         readonly=False
     )

@@ -21,6 +21,7 @@
           <field attrs="{'invisible': [('is_company', '=', False)]}" name="tourism_licence"/>          
           <field attrs="{'invisible': [('is_company', '=', False)]}" name="company_category" optional="hide" widget="many2many_tags"/>
           <field attrs="{'invisible': [('is_company', '=', False)]}" name="company_speciality" optional="hide" widget="many2many_tags"/>
+          <field name="continent" optional="hide" widget="many2many_tags"/>
           <field attrs="{'invisible': [('is_company', '=', False)]}" name="historic"/>
           <field attrs="{'invisible': [('is_company', '=', False)]}" name="opening_hours"/>
         </xpath>

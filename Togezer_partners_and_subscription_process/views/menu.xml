@@ -23,6 +23,15 @@
             <field name="help" type="html"><p><br/></p></field>
         </record>
 
+        <!-- Continents-->
+        <record id="action_continent_list_view" model="ir.actions.act_window">
+            <field name="name">Continents</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">togezer.continent</field>
+            <field name="view_mode">tree</field>
+            <field name="help" type="html"><p><br/></p></field>
+        </record>
+
 
 
         <!-- ************************************************************************** -->
@@ -39,6 +48,12 @@
         <menuitem id="company_specialities_list_menu"
             name="Company specialities"
             action="action_company_specialities_list_view"
+            parent="contacts.res_partner_menu_config"/>
+        
+        <!-- Company Specialities-->
+        <menuitem id="continent_list_menu"
+            name="Continents"
+            action="action_continent_list_view"
             parent="contacts.res_partner_menu_config"/>
     </data>
 </odoo>

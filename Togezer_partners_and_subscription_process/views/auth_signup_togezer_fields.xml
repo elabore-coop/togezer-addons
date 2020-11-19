@@ -2,6 +2,11 @@
 <odoo>
         <template id="auth_signup_togezer_fields" inherit_id="auth_signup.fields" name="Add Togezer custom fields to Auth SignUp">
             <xpath expr="//div[hasclass('form-group','field-name')]" position="after">
+                <div class="form-group field-firstname">
+                    <label for="login">Your Firstname</label>
+                    <input type="text" name="firstname" t-att-value="firstname" id="firstname" class="form-control form-control-sm" autofocus="autofocus"
+                        autocapitalize="off" t-att-readonly="'readonly' if only_passwords else None"/>
+                </div>
                 <div class="form-group field-phone">
                     <label for="login">Your Phone</label>
                     <input type="tel" name="phone" t-att-value="phone" id="phone" class="form-control form-control-sm" autofocus="autofocus"
@@ -22,14 +27,47 @@
                     <input type="text" name="my_company" t-att-value="my_company" id="my_company" class="form-control form-control-sm" autofocus="autofocus"
                         autocapitalize="off" required="required" t-att-readonly="'readonly' if only_passwords else None"/>
                 </div>
-                <div class="form-group field-website">
-                    <label for="login">Your company website</label>
-                    <input type="url" name="website" t-att-value="website" id="website" class="form-control form-control-sm" autofocus="autofocus"
+                <div class="form-group field-function">
+                    <label for="login">Your Function</label>
+                    <input type="text" name="function" t-att-value="function" id="function" class="form-control form-control-sm" autofocus="autofocus"
                         autocapitalize="off" required="required" t-att-readonly="'readonly' if only_passwords else None"/>
                 </div>
+                <div class="form-group field-website">
+                    <label for="login">Your Company Website</label>
+                    <input type="text" name="website" t-att-value="website" id="website" class="form-control form-control-sm" autofocus="autofocus"
+                        autocapitalize="off" required="required" t-att-readonly="'readonly' if only_passwords else None"/>
+                </div>
+                <div class="form-group field-street">
+                    <label for="login">Your Company Address</label>
+                    <input type="text" name="street" t-att-value="street" id="street" class="form-control form-control-sm" autofocus="autofocus"
+                        autocapitalize="off" t-att-readonly="'readonly' if only_passwords else None"/>
+                </div>
+                <div class="form-group field-zip">
+                    <label for="login">Your Company Zip</label>
+                    <input type="text" name="zip" id="zip" class="form-control form-control-sm" autofocus="autofocus"
+                        autocapitalize="off" t-att-readonly="'readonly' if only_passwords else None"/>
+                </div>
+                <div class="form-group field-city">
+                    <label for="login">Your Company City</label>
+                    <input type="text" name="city" t-att-value="city" id="city" class="form-control form-control-sm" autofocus="autofocus"
+                        autocapitalize="off" t-att-readonly="'readonly' if only_passwords else None"/>
+                </div>
+                <!-- TO BE ADDED LATER
+                <div class="form-group field-country">
+                    <label for="name">Your Company Country</label>                               
+                    <select class="form-control" name="country_id" t-att-value="country_id" id="country_id">
+                        <option value="">Country...</option>
+                        <t t-foreach="request.env['res.country'].search([])" t-as="country">
+                            <option t-attf-value="#{country.id}">
+                                <t t-esc="country.name"/>
+                            </option>
+                        </t>
+                    </select>
+                </div>
+                -->
                 <div class="form-group field-biography">
                     <label for="login">Your Biography</label>
-                    <input type="text" name="biography" t-att-value="biography" id="biography" class="form-control form-control-sm" autofocus="autofocus"
+                    <input type="text" name="biography" t-att-value="biography" id="biography" class="form-control" autofocus="autofocus"
                         autocapitalize="off" required="required" t-att-readonly="'readonly' if only_passwords else None"/>
                 </div>
                 <!-- TO BE ADDED LATER
