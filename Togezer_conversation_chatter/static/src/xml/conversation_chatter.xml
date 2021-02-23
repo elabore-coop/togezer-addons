@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<templates>
+    <t t-name="mail.conversation_chatter" t-extend="mail.chatter.Buttons">
+    <!--<xpath expr="//div[hasclass('form-group','field-name')]" position="after">-->
+        <t t-jquery=".o_chatter_button_log_note" t-operation="replace"/>        
+</templates>
