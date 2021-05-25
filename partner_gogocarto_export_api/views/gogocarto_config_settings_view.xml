@@ -13,7 +13,7 @@
                         <div class="col-12 col-lg-6 o_setting_box" id="gogocarto_fields">
                             <div class="o_setting_right_pane">
                                 <div class="text-muted">
-                                    Partner fields to export for Gogocarto map. Check the export on /web/get_http_gogocarto_elements.
+				    Partner fields to export for Gogocarto map. Check the export on /web/1/get_http_gogocarto_elements.
                                 </div>
                                 <div class="content-group">
                                     <div class="mt16">
