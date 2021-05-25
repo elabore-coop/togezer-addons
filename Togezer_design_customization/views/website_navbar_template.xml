@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Front-end/Back-end integration -->
+    <template id="user_navbar" inherit_id="website.user_navbar">
+        <xpath expr="//ul[@id='oe_applications']" position="replace">
+            <ul id="oe_applications">
+                <li class="dropdown active">
+                    <a class="dropdown-toggle full" data-toggle="dropdown" href="#">
+                        <i class="fa fa-th-large"/> MENU
+                    </a>
+                    <div class="dropdown-menu" role="menu">
+                        <!-- This will be populated on hover in JS -->
+                    </div>
+                </li>
+            </ul>
+        </xpath>
+    </template>
+</odoo>
