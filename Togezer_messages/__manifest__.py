@@ -68,7 +68,6 @@ Elabore is a cooperative corporation whose mission is to support the collaborati
 
     # always loaded
     'data': [
-       'views/website_navbar_template.xml',
     ],
 
     # only loaded in demonstration mode
