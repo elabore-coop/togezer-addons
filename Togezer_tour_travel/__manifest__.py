@@ -2,26 +2,26 @@
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl).
 
 {
-    'name': 'togezer_design_customization',
+    'name': 'togezer_tour_travel',
     'version': '13.0.1.0.10',
     'author': 'Elabore',
     'maintainer': 'False',
     'website': 'https://elabore.coop',
     'license': '',
     'category': 'False',
-    'summary': 'Customization of togezer.travel design - https://togezer.travel',
+    'summary': 'Customization of togezer.travel Tour & Travel module - https://togezer.travel',
     'description': """
 .. image:: https://img.shields.io/badge/licence-AGPL--3-blue.svg
    :target: http://www.gnu.org/licenses/agpl-3.0-standalone.html
    :alt: License: AGPL-3
-=========================================
-Togezer PArtners and Subscription Process
-=========================================
-The module's goal is to customize Togezer design.
+=====================
+Togezer Tour & Travel
+=====================
+The module's goal is to customize Togezer Tour & Travel module.
 
 Installation
 ============
-Just install togezer_partners_and_subscription_process, all dependencies will be installed by default.
+Just install togezer_tour_travel, all dependencies will be installed by default.
 
 Known issues / Roadmap
 ======================
