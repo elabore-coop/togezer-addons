@@ -60,7 +60,9 @@ Elabore is a cooperative corporation whose mission is to support the collaborati
     # any module necessary for this one to work correctly
     'depends': [
         'base',
-        'website'
+        'website',
+        'sale_management',
+        'mail',
     ],
     'external_dependencies': {
         'python': [],
