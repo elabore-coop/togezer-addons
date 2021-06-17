@@ -60,7 +60,7 @@ Elabore is a cooperative corporation whose mission is to support the collaborati
     # any module necessary for this one to work correctly
     'depends': [
         'base',
-        'website'
+        'sale_management'
     ],
     'external_dependencies': {
         'python': [],
@@ -68,7 +68,6 @@ Elabore is a cooperative corporation whose mission is to support the collaborati
 
     # always loaded
     'data': [
-       'views/website_navbar_template.xml',
     ],
 
     # only loaded in demonstration mode
