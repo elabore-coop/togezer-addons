@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="opt_index_togezer_members" name="Togezer members"
+        customize_show="True" inherit_id="website_membership.index">
+        <xpath expr="//div[@id='wrap']" position="replace">
+            <div class="oe_structure">
+                <section>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <h1 class="text-center">Our Members Directory</h1>
+                                <h3 class="text-muted text-center">Find a business partner</h3>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-3 mb32" id="left_column">
+                        <div class='d-flex m-2'>
+                            <form action="" method="get"
+                                class="navbar-search ml-auto pagination form-inline">
+                                <t t-call="website.website_search_box">
+                                    <t t-set="search" t-value="post.get('search', '')" />
+                                </t>
+                            </form>
+                        </div>
+                        <ul class="nav nav-pills flex-column mt16">
+                            <li class="nav-header nav-item">
+                                <h3>Specialities</h3>
+                            </li>
+                            <t t-foreach="categories" t-as="category">
+                                <li t-if="category['name']" class="nav-item">
+                                    <a
+                                        t-attf-href="/members#{'/category/%s' % category['id'] or '' }#{ search }"
+                                        t-attf-class="nav-link#{(category['id'] == current_category_id) and ' active' or ''}">
+                                        <t t-esc="category['name']" />
+                                        <span class="badge badge-pill float-right">
+                                            <t t-esc="category['category_id_count']" />
+                                        </span>
+                                    </a>
+                                </li>
+                            </t>
+                        </ul>
+                        <ul class="nav nav-pills flex-column mt16">
+                            <li class="nav-header nav-item">
+                                <h3>Location</h3>
+                            </li>
+                            <t t-foreach="countries" t-as="country">
+                                <li t-if="country['country_id']" class="nav-item">
+                                    <a
+                                        t-attf-href="/members#{ country['country_id'][0] and '/country/%s' % slug(country['country_id']) or '' }#{ search }"
+                                        t-attf-class="nav-link#{country['country_id'] and country['country_id'][0] == current_country_id and ' active' or ''}">
+                                        <t t-esc="country['country_id'][1]" />
+                                        <span class="badge badge-pill float-right">
+                                            <t t-esc="country['country_id_count'] or '0'" />
+                                        </span>
+                                    </a>
+                                </li>
+                            </t>
+                        </ul>
+                    </div>
+                    <div class="col-lg-8" id="ref_content">
+                        <div class='d-flex m-2'>
+                            <t t-call="website.pager">
+                                <t t-set="classname">float-left</t>
+                            </t>
+                        </div>
+                        <div>
+                            <t t-if="not partners">
+                                <p>No result found.</p>
+                            </t>
+                            <t t-foreach="partners" t-as="partner">
+                                <div class="media mt-3">
+                                    <a t-attf-href="/members/#{slug(partner)}"
+                                        t-field="partner.image_128"
+                                        t-options='{"widget": "image", "qweb_img_responsive": False, "class": "o_image_64_cover mr-3"}'
+                                    ></a>
+                                    <div class="media-body" style="min-height: 64px;">
+                                        <a t-attf-href="/members/#{slug(partner)}">
+                                            <span t-field="partner.display_name" />
+                                        </a>
+                                        <div t-field="partner.website_short_description" />
+                                    </div>
+                                </div>
+                            </t>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="oe_structure" id="oe_structure_website_membership_index_1" />
+        </xpath>
+    </template>
+
+</odoo>
