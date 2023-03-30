@@ -37,9 +37,10 @@ class WebsiteMembershipCategory(WebsiteMembership):
         current_country = None
         current_category = None
         # base domain for groupby / searches
+        category_agency_id = Category.sudo().search([("name", "=", "Agence de Voyage")])
         search_domain = [
             ('is_company', '=', True),
-            ('membership_state', 'in', ['paid', 'free']),
+            ('company_category', 'in', [category_agency_id[0].id]),
             ('website_published', '=', True),
             ('active', '=', True)
         ]
