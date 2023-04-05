@@ -6,7 +6,7 @@
         <field name="arch" type="xml">
             <xpath expr="//t[@name='Partner Details']" position="replace">
                 <t name="Partner Details" t-name="website_partner.partner_detail">
-                    <div id="wrap" class="oe_structure oe_empty" groups="base.group_user">
+                    <div id="wrap" class="oe_structure oe_empty" style="width:100%" groups="base.group_user">
                         <!-- HEADER -->
                         <section
                             class="s_cover parallax s_parallax_is_fixed bg-black-50 pt96 pb50 s_parallax_no_overflow_hidden"
