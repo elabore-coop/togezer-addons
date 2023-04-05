@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <odoo>
+    <record id="togezer_member_list" model="ir.ui.view">
+        <field name="name">Togezer Members</field>
+        <field name="inherit_id" ref="website_membership.index" />
+        <field name="arch" type="xml">
+            <xpath expr="//t[@t-call='website.pager']" position="replace" />
+        </field>
+    </record>
+
     <record id="togezer_member_detail" model="ir.ui.view">
         <field name="name">Togezer Member details</field>
         <field name="inherit_id" ref="website_partner.partner_detail" />
@@ -12,14 +20,31 @@
                             class="s_cover parallax s_parallax_is_fixed bg-black-50 pt96 pb50 s_parallax_no_overflow_hidden"
                             data-scroll-background-ratio="1" data-name="Cover"
                             style="background-image: none;">
-                            <span class="s_parallax_bg oe_img_bg oe_custom_bg"
-                                t-attf-style="#{partner.banner_image and ('background-image: url(%s);' % website.image_url(partner, 'banner_image'))} background-position: center;" />
+                            <!-- Partner banner image -->
+                            <t t-if="partner.banner_image">
+                                <span class="s_parallax_bg oe_img_bg oe_custom_bg"
+                                    t-attf-style="#{partner.banner_image and ('background-image: url(%s);' % website.image_url(partner, 'banner_image'))} background-position: center;" />
+                            </t>
+                            <!-- Default banner image -->
+                            <t t-if="not partner.banner_image">
+                                <span class="s_parallax_bg oe_img_bg oe_custom_bg"
+                                    style="background-image: url('/togezer_custom_member_web_pages/static/src/img/default_banner.png'); background-attachment: scroll;" />
+                            </t>
                             <div class="container">
                                 <div class="row">
                                     <div class="pt0 pb0 col-lg-1" />
                                     <div class="pt0 pb0 col-lg-3">
-                                        <div t-field="partner.image_1920"
-                                            t-options='{"widget": "image", "preview_image": "image_512", "class": "d-block mx-auto mb16"}' />
+                                        <t t-if="partner.image_1920">
+                                            <div t-field="partner.image_1920"
+                                                t-options='{"widget": "image", "preview_image": "image_512", "class": "d-block mx-auto mb16"}' />
+                                        </t>
+                                        <t t-if="not partner.image_1920">
+                                            <div>
+                                                <img src="/togezer_custom_member_web_pages/static/src/img/default_logo_partner_128.png" 
+                                                    class="img img-fluid d-block mx-auto mb16" 
+                                                    />
+                                            </div>
+                                        </t>
                                     </div>
                                     <div class="pt32 col-lg-7">
                                         <div class="col-lg-12 s_title" data-name="Title">
@@ -34,8 +59,7 @@
                                 </div>
                             </div>
                             <div class="container">
-                                <div
-                                    t-if="partner.search_partner">
+                                <div t-if="partner.search_partner">
                                     <div class="s_text pt16 pb16 offset-lg-9 col-lg-3"
                                         data-name="Text">
                                         <b>
