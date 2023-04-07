@@ -4,7 +4,41 @@
         <field name="name">Togezer Members</field>
         <field name="inherit_id" ref="website_membership.index" />
         <field name="arch" type="xml">
+            <!-- Hide pager -->
             <xpath expr="//t[@t-call='website.pager']" position="replace" />
+            
+            <!-- set default logo if no logo -->
+            <xpath expr="//div[@class='media mt-3']" position="replace">
+                <div class="media mt-3">
+                    <!-- patner logo -->
+                    <t t-if="partner.image_128">
+                        <a t-attf-href="/members/#{slug(partner)}"
+                            t-field="partner.image_128"
+                            t-options='{"widget": "image", "qweb_img_responsive": False, "class": "o_image_64_cover mr-3"}'
+                        ></a>
+                        <div class="media-body" style="min-height: 64px;">
+                            <a t-attf-href="/members/#{slug(partner)}">
+                                <span t-field="partner.display_name"/>
+                            </a>
+                            <div t-field="partner.website_short_description"/>
+                        </div>
+                    </t>
+                    <!-- default logo -->
+                    <t t-if="not partner.image_128">
+                        <a t-attf-href="/members/#{slug(partner)}">
+                            <img src="/togezer_custom_member_web_pages/static/src/img/default_logo_partner_128.png" 
+                            class="img o_image_64_cover mr-3" 
+                            />
+                        </a>
+                        <div class="media-body" style="min-height: 64px;">
+                            <a t-attf-href="/members/#{slug(partner)}">
+                                <span t-field="partner.display_name"/>
+                            </a>
+                            <div t-field="partner.website_short_description"/>
+                        </div>
+                    </t>
+                </div>
+            </xpath>
         </field>
     </record>
 
