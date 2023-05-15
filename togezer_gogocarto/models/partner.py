@@ -19,7 +19,7 @@ class Partner(models.Model):
                     "date"]:
                 parser.append(field.name)
             elif field.name == 'child_ids':
-                parser.append((field.name, ['id', 'name','website_short_description']))
+                parser.append((field.name, ['id', 'name','website_short_description','biography']))
             elif field.name == 'x_pictures':
                 parser.append((field.name, ['id', 'x_url']))
             elif field.name == 'x_touristic_tours':
