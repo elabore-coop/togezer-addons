@@ -24,6 +24,8 @@ class Partner(models.Model):
                 parser.append((field.name, ['id', 'x_url']))
             elif field.name == 'x_touristic_tours':
                 parser.append((field.name, ['id', 'x_name', 'x_url']))
+            elif field.name == 'x_videos':
+                parser.append((field.name, ['id', 'x_name', 'x_url']))
             elif field.ttype in ["many2one", "one2many", "many2many"]:
                 parser.append((field.name, ['id', 'name']))
             elif field.ttype == "binary":
