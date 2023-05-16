@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="togezer_registration_attendee_details" inherit_id="website_event.registration_attendee_details" name="Registration Attendee Details">
+        <xpath expr="(//div[hasclass('col-lg')])[1]/label" position="replace">
+            <label>Votre prénom et nom</label>
+        </xpath>
+        <xpath expr="(//div[hasclass('col-lg')])[2]/label" position="replace">
+            <label>Votre adresse professionnelle</label>
+        </xpath>
+        <xpath expr="(//div[hasclass('col-lg')])[3]/label" position="replace">
+            <label>Le nom de votre agence de voyage</label>
+        </xpath>
+    </template>
+</odoo>
