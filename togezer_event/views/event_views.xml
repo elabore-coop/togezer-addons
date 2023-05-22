@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<odoo>
+    <data>
+        <!-- EVENT.REGISTRATION VIEWS -->
+        <record model="ir.ui.view" id="view_event_registration_tree_togezer_inherit">
+            <field name="name">event.registration.tree.togezer</field>
+            <field name="model">event.registration</field>
+            <field name="inherit_id" ref="event.view_event_registration_tree"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='email']" position="after">
+                    <field name="phone" />
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>
